@@ -31,7 +31,7 @@ public class MainPresenterImpl implements MainPresenter {
 
             @Override
             protected String doInBackground(Void... params) {
-                Util.simulateNetworkLatency(2000);
+                Util.simulateNetworkLatency(4000);
                 return model.getFruit1();
             }
 
@@ -49,7 +49,7 @@ public class MainPresenterImpl implements MainPresenter {
 
             @Override
             protected String doInBackground(Void... params) {
-                Util.simulateNetworkLatency(2000);
+                Util.simulateNetworkLatency(4000);
                 return model.getFruit2();
             }
 
@@ -67,7 +67,7 @@ public class MainPresenterImpl implements MainPresenter {
 
             @Override
             protected String doInBackground(Void... params) {
-                Util.simulateNetworkLatency(2000);
+                Util.simulateNetworkLatency(4000);
                 return model.getCheese1();
             }
 
@@ -85,7 +85,7 @@ public class MainPresenterImpl implements MainPresenter {
 
             @Override
             protected String doInBackground(Void... params) {
-                Util.simulateNetworkLatency(2000);
+                Util.simulateNetworkLatency(4000);
                 return model.getCheese2();
             }
 
@@ -103,7 +103,7 @@ public class MainPresenterImpl implements MainPresenter {
 
             @Override
             protected String doInBackground(Void... params) {
-                Util.simulateNetworkLatency(2000);
+                Util.simulateNetworkLatency(4000);
                 return model.getSweet1();
             }
 
@@ -121,7 +121,7 @@ public class MainPresenterImpl implements MainPresenter {
 
             @Override
             protected String doInBackground(Void... params) {
-                Util.simulateNetworkLatency(2000);
+                Util.simulateNetworkLatency(4000);
                 return model.getSweet2();
             }
 

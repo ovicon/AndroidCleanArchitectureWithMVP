@@ -78,6 +78,7 @@ public class MainActivity extends AppCompatActivity implements MainView {
         progressBarSweet1.setVisibility(View.INVISIBLE);
         progressBarSweet2.setVisibility(View.INVISIBLE);
         presenter = new MainPresenterImpl(this);
+        // Hide keyboard
         getWindow().setSoftInputMode(
                 WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN
         );
@@ -85,63 +86,75 @@ public class MainActivity extends AppCompatActivity implements MainView {
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
-        cachePresenter(presenter);
         outState.putString("presenter_uuid", presenter.getUuid().toString());
+        cachePresenter(presenter);
         // Fruit1
         outState.putInt("progressBarFruit1", progressBarFruit1.getVisibility());
         outState.putBoolean("fruit1", fruit1.isEnabled());
+        outState.putString("fruit1_txt", fruit1.getText().toString());
         outState.putBoolean("getFruit1", getFruit1.isEnabled());
         // Fruit2
         outState.putInt("progressBarFruit2", progressBarFruit1.getVisibility());
         outState.putBoolean("fruit2", fruit2.isEnabled());
+        outState.putString("fruit2_txt", fruit2.getText().toString());
         outState.putBoolean("getFruit2", getFruit2.isEnabled());
         // Cheese1
         outState.putInt("progressBarCheese1", progressBarCheese1.getVisibility());
         outState.putBoolean("cheese1", cheese1.isEnabled());
+        outState.putString("cheese1_txt", cheese1.getText().toString());
         outState.putBoolean("getCheese1", getCheese1.isEnabled());
         // Cheese2
         outState.putInt("progressBarCheese2", progressBarCheese2.getVisibility());
         outState.putBoolean("cheese2", cheese2.isEnabled());
+        outState.putString("cheese2_txt", cheese2.getText().toString());
         outState.putBoolean("getCheese2", getCheese2.isEnabled());
         // Sweet1
         outState.putInt("progressBarSweet1", progressBarSweet1.getVisibility());
         outState.putBoolean("sweet1", sweet1.isEnabled());
+        outState.putString("sweet1_txt", sweet1.getText().toString());
         outState.putBoolean("getSweet1", getSweet1.isEnabled());
         // Sweet2
         outState.putInt("progressBarSweet2", progressBarSweet2.getVisibility());
         outState.putBoolean("sweet2", sweet2.isEnabled());
+        outState.putString("sweet2_txt", sweet2.getText().toString());
         outState.putBoolean("getSweet2", getSweet2.isEnabled());
         super.onSaveInstanceState(outState);
     }
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-        presenter = (MainPresenter) Cache.getInstance().restorePresenterFor(UUID.fromString(savedInstanceState.getString("presenter_uuid")));
+        restorePresenter(UUID.fromString(savedInstanceState.getString("presenter_uuid")));
         // Fruit1
         progressBarFruit1.setVisibility(savedInstanceState.getInt("progressBarFruit1") == View.VISIBLE ? View.VISIBLE : View.INVISIBLE);
         fruit1.setEnabled(savedInstanceState.getBoolean("fruit1"));
+        fruit1.setText(savedInstanceState.getString("fruit1_txt"));
         getFruit1.setEnabled(savedInstanceState.getBoolean("getFruit1"));
         // Fruit2
         progressBarFruit2.setVisibility(savedInstanceState.getInt("progressBarFruit2") == View.VISIBLE ? View.VISIBLE : View.INVISIBLE);
         fruit2.setEnabled(savedInstanceState.getBoolean("fruit2"));
+        fruit1.setText(savedInstanceState.getString("fruit2_txt"));
         getFruit2.setEnabled(savedInstanceState.getBoolean("getFruit2"));
         // Cheese1
         progressBarCheese1.setVisibility(savedInstanceState.getInt("progressBarCheese1") == View.VISIBLE ? View.VISIBLE : View.INVISIBLE);
         cheese1.setEnabled(savedInstanceState.getBoolean("cheese1"));
+        cheese1.setText(savedInstanceState.getString("cheese1_txt"));
         getCheese1.setEnabled(savedInstanceState.getBoolean("getCheese1"));
         // Cheese2
         progressBarCheese2.setVisibility(savedInstanceState.getInt("progressBarCheese2") == View.VISIBLE ? View.VISIBLE : View.INVISIBLE);
         cheese2.setEnabled(savedInstanceState.getBoolean("cheese2"));
+        cheese2.setText(savedInstanceState.getString("cheese2_txt"));
         getCheese2.setEnabled(savedInstanceState.getBoolean("getCheese2"));
         // Sweet1
         progressBarSweet1.setVisibility(savedInstanceState.getInt("progressBarSweet1") == View.VISIBLE ? View.VISIBLE : View.INVISIBLE);
         sweet1.setEnabled(savedInstanceState.getBoolean("sweet1"));
+        sweet1.setText(savedInstanceState.getString("sweet1_txt"));
         getSweet1.setEnabled(savedInstanceState.getBoolean("getSweet1"));
         // Sweet2
         progressBarSweet2.setVisibility(savedInstanceState.getInt("progressBarSweet2") == View.VISIBLE ? View.VISIBLE : View.INVISIBLE);
         sweet2.setEnabled(savedInstanceState.getBoolean("sweet2"));
+        sweet2.setText(savedInstanceState.getString("sweet2_txt"));
         getSweet2.setEnabled(savedInstanceState.getBoolean("getSweet2"));
+        super.onRestoreInstanceState(savedInstanceState);
     }
 
     @OnClick(R.id.get_fruit1)
@@ -295,6 +308,7 @@ public class MainActivity extends AppCompatActivity implements MainView {
 
     @Override
     public void restorePresenter(UUID uuid) {
-        Cache.getInstance().restorePresenterFor(uuid);
+        presenter = (MainPresenter) Cache.getInstance().restorePresenterFor(uuid);
+        presenter.setScreen(this);
     }
 }
