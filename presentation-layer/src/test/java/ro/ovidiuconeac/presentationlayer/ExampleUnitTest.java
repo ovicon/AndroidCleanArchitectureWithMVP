@@ -1,4 +1,4 @@
-package ro.ovidiuconeac.androidcleanarchitecturewithmvp;
+package ro.ovidiuconeac.presentationlayer;
 
 import org.junit.Test;
 

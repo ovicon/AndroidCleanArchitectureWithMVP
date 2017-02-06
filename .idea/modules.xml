@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidCleanArchitectureWithMVP.iml" filepath="$PROJECT_DIR$/AndroidCleanArchitectureWithMVP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business-layer/business-layer.iml" filepath="$PROJECT_DIR$/business-layer/business-layer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/data-layer/data-layer.iml" filepath="$PROJECT_DIR$/data-layer/data-layer.iml" />
       <module fileurl="file://$PROJECT_DIR$/presentation-layer/presentation-layer.iml" filepath="$PROJECT_DIR$/presentation-layer/presentation-layer.iml" />
     </modules>
   </component>

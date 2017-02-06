@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">AndroidCleanArchitectureWithMVP</string>
+    <string name="fruits">Fruits</string>
+    <string name="cheeses">Cheeses</string>
+    <string name="sweets">Sweets</string>
+    <string name="get">Get</string>
 </resources>

@@ -1,4 +1,4 @@
-package ro.ovidiuconeac.androidcleanarchitecturewithmvp;
+package ro.ovidiuconeac.presentationlayer;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

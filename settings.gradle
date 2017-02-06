@@ -1,1 +1,1 @@
-include ':presentation-layer'
+include ':presentation-layer', ':business-layer', ':data-layer'
