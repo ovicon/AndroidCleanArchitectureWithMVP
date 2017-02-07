@@ -1,33 +1,49 @@
 package ro.ovidiuconeac.presentationlayer.features.featurex.model;
 
-import java.util.Random;
+import ro.ovidiuconeaac.businesslayer.beans.CheeseBean;
+import ro.ovidiuconeaac.businesslayer.beans.FruitsBean;
+import ro.ovidiuconeaac.businesslayer.beans.SweetsBean;
+import ro.ovidiuconeac.models.Cheese;
+import ro.ovidiuconeac.models.Fruit;
+import ro.ovidiuconeac.models.Sweet;
 
 /**
  * Created by ovidiu on 2/6/17.
  */
 
 public class MainUseCases {
-    public String getFruit1() {
-        return String.valueOf(new Random().nextInt(1232432525));
+
+    private FruitsBean fruitBean;
+    private CheeseBean cheeseBean;
+    private SweetsBean sweetsBean;
+
+    public MainUseCases() {
+        this.fruitBean = new FruitsBean();
+        this.cheeseBean = new CheeseBean();
+        this.sweetsBean = new SweetsBean();
     }
 
-    public String getFruit2() {
-        return String.valueOf(new Random().nextInt(1232432525));
+    public Fruit getFruit1() {
+        return fruitBean.getRandomFruit();
     }
 
-    public String getCheese1() {
-        return String.valueOf(new Random().nextInt(1232432525));
+    public Fruit getFruit2() {
+        return fruitBean.getRandomFruit();
     }
 
-    public String getCheese2() {
-        return String.valueOf(new Random().nextInt(1232432525));
+    public Cheese getCheese1() {
+        return cheeseBean.getRandomCheese();
     }
 
-    public String getSweet1() {
-        return String.valueOf(new Random().nextInt(1232432525));
+    public Cheese getCheese2() {
+        return cheeseBean.getRandomCheese();
     }
 
-    public String getSweet2() {
-        return String.valueOf(new Random().nextInt(1232432525));
+    public Sweet getSweet1() {
+        return sweetsBean.getRandomSweet();
+    }
+
+    public Sweet getSweet2() {
+        return sweetsBean.getRandomSweet();
     }
 }

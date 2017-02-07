@@ -2,9 +2,6 @@ apply plugin: 'java'
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    // Modules
-    compile project(':models')
-    testCompile 'junit:junit:4.12'
 }
 
 sourceCompatibility = "1.7"

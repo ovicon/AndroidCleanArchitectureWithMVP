@@ -10,6 +10,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/business-layer" />
             <option value="$PROJECT_DIR$/data-layer" />
+            <option value="$PROJECT_DIR$/models" />
             <option value="$PROJECT_DIR$/presentation-layer" />
           </set>
         </option>
