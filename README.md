@@ -12,4 +12,4 @@ The solution is based on the [boilerpart code for asynchronous MVP design for An
 Systems based on clean arhitecture have the following advantages: separation of concerns, independent of frameworks, tetsable, 
 multilayered,  
 
-![AndroidCleanArchitectureWithMVP](http://www.ovidiuconeac.ro/wp-content/uploads/2017/02/AndroidCleanArchitectureWithMVP_emulator-576x1024.png "AndroidCleanArchitectureWithMVP")
+![AndroidCleanArchitectureWithMVP](http://www.ovidiuconeac.ro/wp-content/uploads/2017/02/AndroidCleanArchitectureWithMVP_emulator-169x300.png "AndroidCleanArchitectureWithMVP")
