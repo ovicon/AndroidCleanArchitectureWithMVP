@@ -9,8 +9,7 @@ The solution
 -------
 The solution is based on the [boilerpart code for asynchronous MVP design for Android, without 3rd party libraries](https://github.com/ovicon/AndroidAsynchronousMVPBoilerpart). 
 
-Systems based on clean arhitecture have the following characteristics: separation of concerns, independent of frameworks, independent of user interface, independent of databases, tetsable, multilayered, with a dependency rule that says that code dependencies can only point inwards.  
+Systems based on clean arhitecture have the following characteristics: separation of concerns, multilayered, independent of frameworks, independent of user interface, independent of databases, tetsable by layer, with a dependency rule that says that code dependencies can only point inwards.  
 
-The proposed solution is demonstrated by a simple application.
-
+From now on, I shall only talk about clean arhitecture, in the context of the example application: 
 ![AndroidCleanArchitectureWithMVP](http://www.ovidiuconeac.ro/wp-content/uploads/2017/02/AndroidCleanArchitectureWithMVP_emulator-169x300.png "AndroidCleanArchitectureWithMVP")
