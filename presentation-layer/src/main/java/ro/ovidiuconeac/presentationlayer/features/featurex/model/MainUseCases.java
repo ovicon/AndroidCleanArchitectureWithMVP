@@ -1,8 +1,8 @@
 package ro.ovidiuconeac.presentationlayer.features.featurex.model;
 
-import ro.ovidiuconeaac.businesslayer.beans.CheeseBean;
-import ro.ovidiuconeaac.businesslayer.beans.FruitsBean;
-import ro.ovidiuconeaac.businesslayer.beans.SweetsBean;
+import ro.ovidiuconeaac.businesslayer.beans.CheeseBeanImpl;
+import ro.ovidiuconeaac.businesslayer.beans.FruitsBeanImpl;
+import ro.ovidiuconeaac.businesslayer.beans.SweetsBeanImpl;
 import ro.ovidiuconeac.models.Cheese;
 import ro.ovidiuconeac.models.Fruit;
 import ro.ovidiuconeac.models.Sweet;
@@ -13,14 +13,14 @@ import ro.ovidiuconeac.models.Sweet;
 
 public class MainUseCases {
 
-    private FruitsBean fruitBean;
-    private CheeseBean cheeseBean;
-    private SweetsBean sweetsBean;
+    private FruitsBeanImpl fruitBean;
+    private CheeseBeanImpl cheeseBean;
+    private SweetsBeanImpl sweetsBean;
 
     public MainUseCases() {
-        this.fruitBean = new FruitsBean();
-        this.cheeseBean = new CheeseBean();
-        this.sweetsBean = new SweetsBean();
+        this.fruitBean = new FruitsBeanImpl();
+        this.cheeseBean = new CheeseBeanImpl();
+        this.sweetsBean = new SweetsBeanImpl();
     }
 
     public Fruit getFruit1() {

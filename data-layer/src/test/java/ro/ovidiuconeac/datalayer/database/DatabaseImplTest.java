@@ -12,14 +12,14 @@ import static org.junit.Assert.assertNotNull;
  * Created by ovidiu on 2/7/17.
  */
 
-public class DatabaseTest {
+public class DatabaseImplTest {
 
-    private Database database;
+    private DatabaseImpl database;
     private int id;
 
     @Before
     public void init() {
-        database = Database.getInstance();
+        database = DatabaseImpl.getInstance();
     }
 
     @After
@@ -34,7 +34,7 @@ public class DatabaseTest {
 
     @Test(expected = IndexOutOfBoundsException.class)
     public void whenWrongIdForFruitThrowExpectedException() {
-        assertNotNull(database.getFruitById(16));
+        database.getFruitById(16);
     }
 
     @Test
@@ -44,7 +44,7 @@ public class DatabaseTest {
 
     @Test(expected = IndexOutOfBoundsException.class)
     public void whenWrongIdForCheeseThrowExpectedException() {
-        assertNotNull(database.getCheeseById(-1));
+        database.getCheeseById(-1);
     }
 
     @Test
@@ -54,6 +54,6 @@ public class DatabaseTest {
 
     @Test(expected = IndexOutOfBoundsException.class)
     public void whenWrongIdForSweetThrowExpectedException() {
-        assertNotNull(database.getSweetById(123));
+        database.getSweetById(123);
     }
 }

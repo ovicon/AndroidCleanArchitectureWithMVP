@@ -12,11 +12,11 @@ import static org.junit.Assert.assertNotNull;
 
 public class TestSweetsBean {
 
-    private SweetsBean sweetsBean;
+    private SweetsBeanImpl sweetsBean;
 
     @Before
     public void init() {
-        sweetsBean = new SweetsBean();
+        sweetsBean = new SweetsBeanImpl();
     }
 
     @After

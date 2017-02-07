@@ -4,9 +4,9 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import ro.ovidiuconeaac.businesslayer.beans.CheeseBean;
-import ro.ovidiuconeaac.businesslayer.beans.FruitsBean;
-import ro.ovidiuconeaac.businesslayer.beans.SweetsBean;
+import ro.ovidiuconeaac.businesslayer.beans.CheeseBeanImpl;
+import ro.ovidiuconeaac.businesslayer.beans.FruitsBeanImpl;
+import ro.ovidiuconeaac.businesslayer.beans.SweetsBeanImpl;
 
 import static org.junit.Assert.assertNotNull;
 
@@ -16,15 +16,15 @@ import static org.junit.Assert.assertNotNull;
 
 public class TestMainUseCases {
 
-    private FruitsBean fruitsBean;
-    private CheeseBean cheeseBean;
-    private SweetsBean sweetsBean;
+    private FruitsBeanImpl fruitsBean;
+    private CheeseBeanImpl cheeseBean;
+    private SweetsBeanImpl sweetsBean;
 
     @Before
     public void init() {
-        fruitsBean = new FruitsBean();
-        cheeseBean = new CheeseBean();
-        sweetsBean = new SweetsBean();
+        fruitsBean = new FruitsBeanImpl();
+        cheeseBean = new CheeseBeanImpl();
+        sweetsBean = new SweetsBeanImpl();
     }
 
     @After
