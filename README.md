@@ -14,3 +14,5 @@ Systems based on clean arhitecture have the following characteristics: separatio
 From now on, I shall only talk about clean arhitecture, in the context of the example application:
 
 ![AndroidCleanArchitectureWithMVP](http://www.ovidiuconeac.ro/wp-content/uploads/2017/02/AndroidCleanArchitectureWithMVP_emulator-169x300.png "AndroidCleanArchitectureWithMVP")
+
+I do encourage further reading on this topic, starting with this two excelent resources: [The Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html) and [Architecting Android…The clean way?](http://fernandocejas.com/2014/09/03/architecting-android-the-clean-way/) 
