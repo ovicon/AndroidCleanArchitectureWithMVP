@@ -21,7 +21,11 @@ The example application is based on a 3-tier clean arhitecture.
 
 ![Generic 3-tier clean architecture](http://www.ovidiuconeac.ro/wp-content/uploads/2017/02/clean_architecture_layers.png "Generic 3-tier clean architecture")
 
-The presentation layer is implemented as an MVP design, the domain layer contains plain Java objects, and the data layer is just a dummy database implementaion.
+The presentation layer is implemented as an MVP design, the domain layer contains plain Java objects, and the data layer is just a dummy singelton implementaion.
+
+For the sake of clarity, for each layer, a different module has been used. 
+
+![Modules in Android Studio](http://www.ovidiuconeac.ro/wp-content/uploads/2017/02/modules.png "Modules in Android Studio")
 
 In progress...
 
