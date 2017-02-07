@@ -15,7 +15,7 @@ From now on, I shall only talk about clean arhitecture, in the context of the ex
 
 ![AndroidCleanArchitectureWithMVP](http://www.ovidiuconeac.ro/wp-content/uploads/2017/02/AndroidCleanArchitectureWithMVP_emulator-169x300.png "AndroidCleanArchitectureWithMVP")
 
-The example application is based on a 3-tier clean arhitecture.
+The example application is based on the following 3-tier clean arhitecture: the presentation layer, the domain layer, and the data layer.
 
 ![Generic 3-tier clean architecture](http://www.ovidiuconeac.ro/wp-content/uploads/2017/02/clean_architecture_layers.png "Generic 3-tier clean architecture")
 
