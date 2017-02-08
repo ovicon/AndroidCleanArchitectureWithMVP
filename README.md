@@ -26,9 +26,9 @@ The presentation layer represents the application, and is an Android phone & tab
 
 ![Modules in Android Studio](http://www.ovidiuconeac.ro/wp-content/uploads/2017/02/gradle_modules.png "Modules in Android Studio")
 
-Because gradle manages dependencies between layers, the models module is only defined as a dependency in the data layer, which is used as a dependency in the domain layer, which in turn is used as a dependency in the presentation layer. In this way, the models dependency becomes availabe in all the layers. It is called transitivity, and it is how gradle handles dependencies.
+Because gradle manages dependencies between layers, the models module is only defined as a dependency in the data layer, which is used as a dependency in the domain layer, which in turn is used as a dependency in the presentation layer. In this way, the models dependency becomes available in all the layers. It is called transitivity, and it is how gradle handles dependencies.
 
-To better understand the details of the 3-tier clean arhitecture with MVP, let's see another overview, but from a different perspective.
+To better understand the details of the 3-tier clean architecture with MVP, let's see another overview, but from a different perspective.
 
 ![Clean architecture layers details](http://www.ovidiuconeac.ro/wp-content/uploads/2017/02/clean_architecture_layers_onion_detail.png "Clean architecture layers details")
 
