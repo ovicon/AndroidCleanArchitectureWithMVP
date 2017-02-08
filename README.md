@@ -24,7 +24,7 @@ You can have as many layers as needed, and there is not rule that says that clea
 
 The presentation layer represents the application, and is an Android phone & table module. The domain layer and data layer are Java libraries, and used as gradle dependencies. The presentation layer depends of the domain layer and the domain layer depends on the data layer. There is also an extra module, named models, that contains the models of the application. For the sake of simplicity, these modules are used in all the layers of the application. In a more complex application usually each layer has its own data modeling.
 
-![Modules in Android Studio](http://www.ovidiuconeac.ro/wp-content/uploads/2017/02/modules.png "Modules in Android Studio")
+![Modules in Android Studio](http://www.ovidiuconeac.ro/wp-content/uploads/2017/02/gradle_modules.png "Modules in Android Studio")
 
 Because gradle manages dependencies between layers, the models module is only defined as a dependency in the data layer, which is used as a dependency in the domain layer, which in turn is used as a dependency in the presentation layer. In this way, the models dependency becomes availabe in all the layers. It is called transitivity, and it is how gradle handles dependencies.
 
