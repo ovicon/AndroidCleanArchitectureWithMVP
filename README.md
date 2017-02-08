@@ -38,7 +38,7 @@ This is the same as the previous overview, but with more details about the prese
 
 Following the dependency rule, the arhitecture is layered as follows: the presentation layer (the view, the presenter, the model), the domain layer and the data layer. 
 
-The model in the presenter layer is also known as "uses cases" or "interactors". These use cases, or model, or interactor, or whatever you want to call it, represent application specific business rules. These use cases orchestrate the flow of data between the presentation layer and the domain layer, and they are specific to the application and not the domain. You can think of them, as what the application does, what the presentation layer does. Remember that the presentation layer can be anything from an android aplication, a web application, a standalone application, etc. 
+The model in the presenter layer is also known as "uses cases" or "interactor". These use cases, or model, or interactor, or whatever you want to call it, represent application specific business rules. These use cases orchestrate the flow of data between the presentation layer and the domain layer, and they are specific to the application and not the domain. You can think of them, as what the application does, what the presentation layer does. Remember that the presentation layer can be anything from an android aplication, a web application, a standalone application, etc. 
 
 The idea of clean arhitecture is to have separation of concers. In our example the presentation layer contains everything that is android related, the domain layer contains plain java objects that represent the business entities, and the data layer contains everything that is database related.
 
@@ -48,4 +48,4 @@ The conclusion
 -------
 Having separation of concers in an application might seem like a no-brainer. Yet it is surprisingly difficult to achive. The best way to start is to understand the purpose of the clean arhitecture and just practice.
 
-I do encourage further reading on this topic, starting with this two excelent resources: [The Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html) and [Architecting Android…The clean way?](http://fernandocejas.com/2014/09/03/architecting-android-the-clean-way/).
+I do encourage further reading on this topic, starting with these excelent resources: [The Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html), [Architecting Android…The clean way?](http://fernandocejas.com/2014/09/03/architecting-android-the-clean-way/), [Robert C Martin - Clean Architecture and Design](https://www.youtube.com/watch?v=Nsjsiz2A9mg&t=9s).
