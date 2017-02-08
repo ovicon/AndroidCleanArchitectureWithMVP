@@ -26,11 +26,13 @@ The presentation layer represents the application, and is an Android phone & tab
 
 ![Modules in Android Studio](http://www.ovidiuconeac.ro/wp-content/uploads/2017/02/modules.png "Modules in Android Studio")
 
-Because gradle manages dependencies between layers, the models module is only defined as a dependency in the data layer, which is used as a dependency in the domain layer, which in turn is used as a dependency in the presentation layer. In this way the models dependency becaomes availabe in all the layers. It is called transitivity and it is how gradle handles dependencies.
+Because gradle manages dependencies between layers, the models module is only defined as a dependency in the data layer, which is used as a dependency in the domain layer, which in turn is used as a dependency in the presentation layer. In this way, the models dependency becomes availabe in all the layers. It is called transitivity, and it is how gradle handles dependencies.
 
-To better understand the details of the arhitecture let's see another overview, but from a different perspective. This is the same as the presious overview but with more details about the presentation layer which on its own contains three layers: the view, the presenter and the model. 
+To better understand the details of the arhitecture let's see another overview, but from a different perspective.
 
 ![Clean architecture layers details](http://www.ovidiuconeac.ro/wp-content/uploads/2017/02/clean_architecture_layers_onion_detail.png "Clean architecture layers details")
+
+This is the same as the previous overview, but with more details about the presentation layer, which on its own contains three layers: the view, the presenter and the model. 
 
 Following the dependency rule, the arhitecture is layered as follows: the presentation layer (the view, the presenter, the model), the domain layer and the data layer. The model in the presenter layer is also known as "uses cases". These use cases, or model, represent application specific business rules. These use cases orchestrate the flow of data between the presentation layer and the domain layer, and they are specific to the application and not the domain. You can think of them, as what the application does, what the presentation layer does. Remember that the presentation layer can be anything from an android aplication, a web application, a standalone application, etc. 
 
