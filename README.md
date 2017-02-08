@@ -18,7 +18,7 @@ From now on, I shall only talk about clean arhitecture, in the context of the ex
 The example application is based on the following 3-tier clean arhitecture: the presentation layer, the domain layer, and the data layer.
 ![Generic 3-tier clean architecture](http://www.ovidiuconeac.ro/wp-content/uploads/2017/02/clean_architecture_layers.png "Generic 3-tier clean architecture")
 
-The presentation layer is implemented as an MVP design, the domain layer contains plain Java objects, and the data layer is just a dummy singelton implementaion. 
+The presentation layer is implemented as an MVP design, the domain layer contains plain Java objects, and the data layer is just a dummy singelton implementaion for a database. 
 
 You can have as many layer as needed, and there is not rule that says that clean arhitecture should be implemented with only three layers.
 
