@@ -27,6 +27,12 @@ Because gradle manages dependencies between layers, the models module is only de
 
 ![Modules in Android Studio](http://www.ovidiuconeac.ro/wp-content/uploads/2017/02/modules.png "Modules in Android Studio")
 
+To better understand the arhitecture, let's see it from a different perspective:
+
+![Clean architecture layers overview](http://www.ovidiuconeac.ro/wp-content/uploads/2017/02/clean_architecture_layers_onion_overview.png "Clean architecture layers overview")
+
+
+
 
 I do encourage further reading on this topic, starting with this two excelent resources: [The Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html) and [Architecting Android…The clean way?](http://fernandocejas.com/2014/09/03/architecting-android-the-clean-way/)
 
