@@ -34,6 +34,8 @@ To better understand the details of the 3-tier clean arhitecture with MVP, let's
 
 This is the same as the previous overview, but with more details about the presentation layer, which on its own contains three layers: the view, the presenter and the model. 
 
+![Presentation layer](http://www.ovidiuconeac.ro/wp-content/uploads/2017/02/clean_architecture_presentation_layer.png "Presentation layer")
+
 Following the dependency rule, the arhitecture is layered as follows: the presentation layer (the view, the presenter, the model), the domain layer and the data layer. The model in the presenter layer is also known as "uses cases". These use cases, or model, represent application specific business rules. These use cases orchestrate the flow of data between the presentation layer and the domain layer, and they are specific to the application and not the domain. You can think of them, as what the application does, what the presentation layer does. Remember that the presentation layer can be anything from an android aplication, a web application, a standalone application, etc. 
 
 The idea of clean arhitecture is to have separation of concers. In our example the presentation layer contains everything that is android related, the domain layer contains plain java objects that represent the business entities, and the data layer contains everything that is database related.
