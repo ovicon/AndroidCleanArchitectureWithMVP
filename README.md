@@ -42,7 +42,7 @@ The model in the presenter layer is also known as "uses cases" or "interactor". 
 
 The idea of clean arhitecture is to have separation of concers. In our example the presentation layer contains everything that is android related, the domain layer contains plain java objects that represent the business entities, and the data layer contains everything that is database related.
 
-In a clean arhitecture, is should be possible to replace each layer with a different implementation of the same interfaces, and this should make n difference on the other layers.
+In a clean arhitecture, is should be possible to replace each layer with a different implementation of the same interface, and this should make no difference on the other layers.
 
 The conclusion
 -------
