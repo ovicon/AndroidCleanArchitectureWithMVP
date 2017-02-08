@@ -48,4 +48,6 @@ The conclusion
 -------
 Having separation of concers in an application might seem like a no-brainer. Yet it is surprisingly difficult to achive. The best way to start is to understand the purpose of the clean arhitecture and just practice.
 
+The code of this example application can be used as boilerpart code, upon wich to build your own application. 
+
 I do encourage further reading on this topic, starting with these excelent resources: [The Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html), [Architecting Android…The clean way?](http://fernandocejas.com/2014/09/03/architecting-android-the-clean-way/), [Robert C Martin - Clean Architecture and Design](https://www.youtube.com/watch?v=Nsjsiz2A9mg&t=9s).
