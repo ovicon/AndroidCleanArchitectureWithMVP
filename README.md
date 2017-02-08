@@ -18,9 +18,9 @@ From now on, I shall only talk about clean architecture, in the context of the e
 The example application is based on the following 3-tier clean arhitecture: the presentation layer, the domain layer, and the data layer.
 ![Generic 3-tier clean architecture](http://www.ovidiuconeac.ro/wp-content/uploads/2017/02/clean_architecture_layers.png "Generic 3-tier clean architecture")
 
-The presentation layer is implemented as an MVP design, the domain layer contains plain Java objects, and the data layer is just a dummy singelton implementaion for a database. 
+The presentation layer is implemented as an MVP design, the domain layer contains plain Java objects, and the data layer is just a dummy singleton implementation for a database.
 
-You can have as many layers as needed, and there is not rule that says that clean arhitecture should be implemented with only three layers.
+You can have as many layers as needed, and there is not rule that says that clean architecture should be implemented with only three layers.
 
 The presentation layer represents the application, and is an Android phone & table module. The domain layer and data layer are Java libraries, and used as gradle dependencies. The presentation layer depends of the domain layer and the domain layer depends on the data layer. There is also an extra module, named models, that contains the models of the application. For the sake of simplicity, these modules are used in all the layers of the application. In a more complex application usually each layer has its own data modeling.
 
