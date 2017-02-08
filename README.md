@@ -7,9 +7,9 @@ How to design a simple, decoupled, testable [clean architecture](https://8thligh
 
 The solution
 -------
-The solution is an extension based on the [boilerpart code for asynchronous MVP design for Android, without 3rd party libraries](https://github.com/ovicon/AndroidAsynchronousMVPBoilerpart). 
+Systems based on clean arhitecture have the following characteristics: separation of concerns, multilayered, independent of frameworks, independent of user interfaces, independent of databases, tetsable by layer, with a dependency rule that says that code dependencies can only point inwards, from lower leves like the presentation layer, to higher levels like the data layer. 
 
-Systems based on clean arhitecture have the following characteristics: separation of concerns, multilayered, independent of frameworks, independent of user interfaces, independent of databases, tetsable by layer, with a dependency rule that says that code dependencies can only point inwards, from lower leves like the presentation layer, to higher levels like the data layer.  
+The solution is an extension based on the [boilerpart code for asynchronous MVP design for Android, without 3rd party libraries](https://github.com/ovicon/AndroidAsynchronousMVPBoilerpart).  
 
 From now on, I shall only talk about clean arhitecture, in the context of the example application:
 
