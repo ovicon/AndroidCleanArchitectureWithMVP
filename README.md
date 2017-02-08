@@ -27,20 +27,22 @@ The presentation layer represents the application, and is an Android phone & tab
 
 Because gradle manages dependencies between layers, the models module is only defined as a dependency in the data layer, which is used as a dependency in the domain layer, which in turn is used as a dependency in the presentation layer. In this way the models dependency becaomes availabe in all the layers. It is called transitivity and it is how gradle handles dependencies.
 
-To better understand the arhitecture, let's see another overview but from a different perspective:
-
-
-![Clean architecture layers details](http://www.ovidiuconeac.ro/wp-content/uploads/2017/02/clean_architecture_layers_onion_detail.png "Clean architecture layers details")
+To better understand the details of the arhitecture, let's see another overview, but from a different perspective:
 
 ![Clean architecture layers overview](http://www.ovidiuconeac.ro/wp-content/uploads/2017/02/clean_architecture_layers_onion_overview.png "Clean architecture layers overview")
 
-The fsdfsdf sfsdf sfsd fsd
+This is the same as the presious overview but with more details about the presentation layer which on its own contains three layers: the view, the presenter and the model. 
 
+![Clean architecture layers details](http://www.ovidiuconeac.ro/wp-content/uploads/2017/02/clean_architecture_layers_onion_detail.png "Clean architecture layers details")
 
+Following the dependency rule, the arhitecture is layered as follows: the presentation layer (the view, the presenter, the model), the domain layer and the data layer. The model in the presenter layer is also known as "uses cases". These use cases, or model, represent application specific business rules. These use cases orchestrate the flow of data between the presentation layer and the domain layer, and they are specific to the application and not the domain. You can think of them, as what the application does, what the presentation layer does. Remember that the presentation layer can be anything from an android aplication, a web application, a standalone application, etc. 
 
+The idea of clean arhitecture is to have separation of concers. In our example the presentation layer contains everything that is android related, the domain layer contains plain java objects that represent the business entities, and the data layer contains everything that is database related.
 
-I do encourage further reading on this topic, starting with this two excelent resources: [The Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html) and [Architecting Android…The clean way?](http://fernandocejas.com/2014/09/03/architecting-android-the-clean-way/)
+In a clean arhitecture, is should be possible to replace each layer with a different implementation of the same interfaces, and this should make n difference on the other layers.
 
-In progress...
+The conclusion
+-------
+Having separation of concers in an application might seem like a no-brainer. Yet it is surprisingly difficult to achive. The best way to start is to understand the purpose of the clean arhitecture and just practice.
 
-
+I do encourage further reading on this topic, starting with this two excelent resources: [The Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html) and [Architecting Android…The clean way?](http://fernandocejas.com/2014/09/03/architecting-android-the-clean-way/).
