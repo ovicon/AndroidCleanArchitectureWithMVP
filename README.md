@@ -31,7 +31,7 @@ To better understand the arhitecture, let's see another overview but from a diff
 
 ![Clean architecture layers overview](http://www.ovidiuconeac.ro/wp-content/uploads/2017/02/clean_architecture_layers_onion_overview.png "Clean architecture layers overview")
 
-![Clean architecture layers details](http://www.ovidiuconeac.ro/wp-content/uploads/2017/02/clean_architecture_layers_onion_details.png "Clean architecture layers details")
+![Clean architecture layers details](http://www.ovidiuconeac.ro/wp-content/uploads/2017/02/clean_architecture_layers_onion_detail.png "Clean architecture layers details")
 
 
 
