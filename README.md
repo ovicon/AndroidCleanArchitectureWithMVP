@@ -29,11 +29,13 @@ Because gradle manages dependencies between layers, the models module is only de
 
 To better understand the arhitecture, let's see another overview but from a different perspective:
 
+
+![Clean architecture layers details](http://www.ovidiuconeac.ro/wp-content/uploads/2017/02/clean_architecture_layers_onion_detail.png "Clean architecture layers details")
+
 ![Clean architecture layers overview](http://www.ovidiuconeac.ro/wp-content/uploads/2017/02/clean_architecture_layers_onion_overview.png "Clean architecture layers overview")
 
 The fsdfsdf sfsdf sfsd fsd
 
-![Clean architecture layers details](http://www.ovidiuconeac.ro/wp-content/uploads/2017/02/clean_architecture_layers_onion_detail.png "Clean architecture layers details")
 
 
 
