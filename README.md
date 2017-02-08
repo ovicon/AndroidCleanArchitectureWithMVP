@@ -27,11 +27,7 @@ The presentation layer represents the application, and is an Android phone & tab
 
 Because gradle manages dependencies between layers, the models module is only defined as a dependency in the data layer, which is used as a dependency in the domain layer, which in turn is used as a dependency in the presentation layer. In this way the models dependency becaomes availabe in all the layers. It is called transitivity and it is how gradle handles dependencies.
 
-To better understand the details of the arhitecture, let's see another overview, but from a different perspective:
-
-![Clean architecture layers overview](http://www.ovidiuconeac.ro/wp-content/uploads/2017/02/clean_architecture_layers_onion_overview.png "Clean architecture layers overview")
-
-This is the same as the presious overview but with more details about the presentation layer which on its own contains three layers: the view, the presenter and the model. 
+To better understand the details of the arhitecture let's see another overview, but from a different perspective. This is the same as the presious overview but with more details about the presentation layer which on its own contains three layers: the view, the presenter and the model. 
 
 ![Clean architecture layers details](http://www.ovidiuconeac.ro/wp-content/uploads/2017/02/clean_architecture_layers_onion_detail.png "Clean architecture layers details")
 
