@@ -22,7 +22,7 @@ The presentation layer is implemented as an MVP design, the domain layer contain
 
 You can have as many layers as needed, and there is not rule that says that clean architecture should be implemented with only three layers.
 
-The presentation layer represents the application, and is an Android phone & table module. The domain layer and data layer are Java libraries, and used as gradle dependencies. The presentation layer depends of the domain layer and the domain layer depends on the data layer. There is also an extra module, named models, that contains the models of the application. For the sake of simplicity, these modules are used in all the layers of the application. In a more complex application usually each layer has its own data modeling.
+The presentation layer represents the application, and is an Android phone & table module. The domain layer and data layer are Java libraries, and used as gradle dependencies. The presentation layer depends of the domain layer and the domain layer depends on the data layer. There is also an extra module, named models, that contains the models of the application. For the sake of simplicity, these models are used in all the layers of the application. In a more complex application usually each layer has its own data modeling.
 
 ![Modules in Android Studio](http://www.ovidiuconeac.ro/wp-content/uploads/2017/02/gradle_modules.png "Modules in Android Studio")
 
