@@ -50,4 +50,27 @@ Having separation of concerns in an application might seem like a no-brainier. Y
 
 The code of this example application can be used as boilerpart code, upon which to build your own application.
 
+See also a short video discussion about this solution [here](https://www.youtube.com/watch?v=btyF_Zl7uAk&feature=youtu.be).
+
 I do encourage further reading on this topic, starting with these excellent resources: [The Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html), [Architecting Android…The clean way?](http://fernandocejas.com/2014/09/03/architecting-android-the-clean-way/), [Robert C Martin - Clean Architecture and Design](https://www.youtube.com/watch?v=Nsjsiz2A9mg&t=9s).
+
+Known issues
+-------
+How to test unit test the presenters?
+
+License
+-------
+
+    Copyright 2016 Ovidiu CONEAC
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
