@@ -17,13 +17,13 @@ public class TestCheesesDaoImpl {
     private int id;
 
     @Before
-    public void init() {
+    public void setUp() {
         dao = new CheesesDaoImpl();
         id = new Random().nextInt(14);
     }
 
     @After
-    public void deinit() {
+    public void tearDown() {
         dao = null;
     }
 

@@ -15,12 +15,12 @@ public class TestSweetsBean {
     private SweetsBeanImpl sweetsBean;
 
     @Before
-    public void init() {
+    public void setUp() {
         sweetsBean = new SweetsBeanImpl();
     }
 
     @After
-    public void deinit() {
+    public void tearDown() {
         sweetsBean = null;
     }
 

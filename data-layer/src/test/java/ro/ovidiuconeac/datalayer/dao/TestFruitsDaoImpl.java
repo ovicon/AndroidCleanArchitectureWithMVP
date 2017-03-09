@@ -18,13 +18,13 @@ public class TestFruitsDaoImpl {
     private int id;
 
     @Before
-    public void init() {
+    public void setUp() {
         dao = new FruitsDaoImpl();
         id = new Random().nextInt(14);
     }
 
     @After
-    public void deinit() {
+    public void tearDown() {
         dao = null;
     }
 

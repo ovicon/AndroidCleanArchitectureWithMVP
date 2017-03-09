@@ -15,12 +15,12 @@ public class TestCheeseBean {
     private CheeseBeanImpl cheeseBean;
 
     @Before
-    public void init() {
+    public void setUp() {
         cheeseBean = new CheeseBeanImpl();
     }
 
     @After
-    public void deinit() {
+    public void tearDown() {
         cheeseBean = null;
     }
 

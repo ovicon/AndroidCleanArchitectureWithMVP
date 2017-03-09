@@ -18,12 +18,12 @@ public class DatabaseImplTest {
     private int id;
 
     @Before
-    public void init() {
+    public void setUp() {
         database = DatabaseImpl.getInstance();
     }
 
     @After
-    public void deinit() {
+    public void tearDown() {
         id = new Random().nextInt(14);
     }
 

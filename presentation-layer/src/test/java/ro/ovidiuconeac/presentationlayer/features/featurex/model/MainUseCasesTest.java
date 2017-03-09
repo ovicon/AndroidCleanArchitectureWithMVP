@@ -14,21 +14,21 @@ import static org.junit.Assert.assertNotNull;
  * Created by ovidiu on 2/7/17.
  */
 
-public class TestMainUseCases {
+public class MainUseCasesTest {
 
     private FruitsBeanImpl fruitsBean;
     private CheeseBeanImpl cheeseBean;
     private SweetsBeanImpl sweetsBean;
 
     @Before
-    public void init() {
+    public void setUp() {
         fruitsBean = new FruitsBeanImpl();
         cheeseBean = new CheeseBeanImpl();
         sweetsBean = new SweetsBeanImpl();
     }
 
     @After
-    public void deinit() {
+    public void tearDown() {
         fruitsBean = null;
         cheeseBean = null;
         sweetsBean = null;

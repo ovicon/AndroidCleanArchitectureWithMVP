@@ -18,13 +18,13 @@ public class TestSweetsDaoImpl {
     private int id;
 
     @Before
-    public void init() {
+    public void setUp() {
         dao = new SweetsDaoImpl();
         id = new Random().nextInt(14);
     }
 
     @After
-    public void deinit() {
+    public void tearDown() {
         dao = null;
     }
 
