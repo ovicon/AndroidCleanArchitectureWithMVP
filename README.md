@@ -54,10 +54,6 @@ See also a short video discussion about this solution [here](https://www.youtube
 
 I do encourage further reading on this topic, starting with these excellent resources: [The Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html), [Architecting Android…The clean way?](http://fernandocejas.com/2014/09/03/architecting-android-the-clean-way/), [Robert C Martin - Clean Architecture and Design](https://www.youtube.com/watch?v=Nsjsiz2A9mg&t=9s).
 
-Known issues
--------
-How to test unit test the presenters?
-
 License
 -------
 
